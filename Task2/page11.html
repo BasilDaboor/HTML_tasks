@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <label for="age">age<span>(optional)</span></label>
+        <input type="text" id="age" placeholder="Age">
+        <label for="survey">how did you like my survey</label>
+        <select >
+            <option selected hidden>how did you like my survey</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">three</option>
+        </select>
+        <label>would you recommend my pen to a friend?</label>
+        <div>
+            <input type="radio" name="recommend" id="Definitely">
+            <label for="Definitely">Definitely</label><br>
+            <input type="radio" name="recommend" id="Maybe">
+            <label for="Maybe">Maybe</label><br>
+            <input type="radio" name="recommend" id="Not_sure">
+            <label for="Not_sure">Not sure</label>
+        </div>
+
+    </form>
+</body>
+</html>
