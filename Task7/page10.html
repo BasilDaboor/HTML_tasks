@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+        color: white;
+       
+    }
+    div p:first-child,p:nth-child(3) {
+        background-color: rgb(120, 188, 255);
+    }
+    div p:nth-child(7),p:nth-child(9){
+        background-color: orange;
+    }
+    div p:nth-child(even){
+        background-color: white;
+        color: black;
+        padding: 0px;
+    }
+    p{
+        padding: 10px;
+        font-size: 22px;
+    }
+
+</style>
+</head>
+<body>
+    <div>
+        <p>Item1</p>
+        <p>Item2</p>
+        <p>Item3</p>
+        <p>Item4</p>
+        <p style="background-color: rgb(229, 97, 189);" >Item5</p>
+        <p>Item6</p>
+        <p>Item7</p>
+        <p>Item8</p>
+        <p>Item9</p>
+        <p>Item10</p>
+    </div>
+</body>
+</html>

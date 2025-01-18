@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Class and Id</title>
+<style>
+#header{
+    color: darkolivegreen;
+    font-family: cursive;
+}
+.cl1{
+    color: rgb(0, 169, 68);
+    text-decoration: underline;
+}
+#id1{
+    background-color: aqua;
+    color: burlywood;
+}
+#div1{
+    color: red;
+    background-color: rgba(112, 161, 145, 0.491);
+}
+#div2{
+background-color: pink;
+text-align: center;
+}
+#div2  p:nth-child(odd) {
+            color: blue;
+        }
+#div2  p:nth-child(even) {
+            color: red;
+        }
+</style>
+</head>
+<body>
+    <h1 id="header">CSS Selectors</h1>
+    <p class="cl1">I'm a class selector</p>
+    <p id="id1">I'm the ID selector. Here I am a boss</p>
+    <div id="div1">
+        <p>I'm red</p>
+        <p>I'm also red</p>
+        <p style="color: blue;">you are blue cuz of the id 😑</p>
+    </div>
+    <div id="div2">
+        <p>I'm odd number</p>
+        <p>I'm even number</p>
+        <p>I'm also odd number</p>
+        <p>I'm also even number</p>
+    </div>
+    <p>&copy; <a href="https://github.com/BasilDaboor">Here is my GitHub page</a> </p>
+    
+</body>
+</html>
