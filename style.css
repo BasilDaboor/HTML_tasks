@@ -24,22 +24,15 @@ body {
     background-color: var(--bgColor-2);
     border: 1px solid var(--primaryColor);
     box-shadow: 0 4px 8px var(--secondaryColor);
-    padding: 10px;
     border-radius: 15px;
-    width: 100%;
-    width: 440px;
-   
-}
-ul{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
     list-style-type: none;
+    padding: 30px;
+
 }
-ul li{
-    margin: 15px;
-    list-style-type: none;
-    padding: 3px;
-}
+
 ul li a {
     text-decoration: none;
     background-color: var(--primaryColor);

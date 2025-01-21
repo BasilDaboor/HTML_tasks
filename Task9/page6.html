@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid gold;
+            height: 90vh;
+            display: flex;
+            color: white;
+        }
+        .childe,.childe10{
+            height: 60px;
+            width: 50px;
+            text-align: center;
+            font-size: 40px;
+            padding-top: 15px ;
+        }
+        .childe4{
+            background-color: blue;
+            width: 50px;
+            text-align: center;
+            font-size: 80px;
+            padding-top: 15px ;
+        }
+        .childe1{
+            background-color: green;
+            height: 20px;
+            width: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            text-align: center;
+        }
+        .childe5{ 
+            background-color: green;
+            height: 20px;
+            width: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            align-self: center;
+        }
+        .childe10{
+            background-color: green;
+            align-self: flex-end;
+        }
+    </style>
 </head>
 <body>
-    <h1>NOT ready yet 😴</h1>
-    
+<div class="parent">
+        <div class="childe1">1</div>
+        <div style="background-color: rgb(115, 139, 16);" class="childe">2</div>
+        <div style="background-color: rgb(19, 243, 68);" class="childe">3</div>
+        <div class="childe4">4</div>
+        <div class="childe5">5</div>
+        <div style="background-color: brown;" class="childe">6</div>
+        <div style="background-color: rgb(255, 0, 0);" class="childe">7</div>
+        <div style="background-color: rgb(22, 171, 17);" class="childe">8</div>
+        <div style="background-color: brown;" class="childe">9</div>
+        <div class="childe10">10</div>
+</div>    
 </body>
 </html>
