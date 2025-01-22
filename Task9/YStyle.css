@@ -42,7 +42,7 @@ text-decoration: underline;
     margin: 0px;
     padding: 0px;
     cursor: pointer;
-    transition: 2.6s;
+    transition: 9.6s;
 
 }
 .videoSpan:hover{
@@ -70,8 +70,8 @@ header{
 }
 .fa-bars{
     color: white;
-     font-size: 20px;
-      margin: 20px;
+    font-size: 20px;
+    margin: 20px;
     cursor: pointer;
     background-color: transparent;
     padding: 10px;
@@ -220,9 +220,7 @@ cursor: pointer;
     font-size: 20px; */
     
 }
-.fa-house:hover{
 
-}
 .material-symbols-outlined{
  color: var(--lightColor);   
 }
@@ -272,5 +270,5 @@ cursor: pointer;
     }
 
 .videoContainer > video:hover{
-border-radius: 10px;
+border-radius: 20px;
 }

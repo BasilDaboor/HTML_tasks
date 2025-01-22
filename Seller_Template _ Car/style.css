@@ -1,0 +1,265 @@
+:root {
+    --primaryColor: #99d4d6;
+    --hov:#99d4d64c;
+    --secondaryColor: #daa3b2;
+    --secondaryColor2:#daa3b299;
+    --lightColor : #ffffff;
+    --bgColor-1 : #171a1c;
+    --bgColor-2 : #22282a;
+}
+
+
+/* scroll-behavior: smooth; */
+
+
+
+/* .parent{
+    position: absolute;
+    }
+    .childe{
+        position: relative;
+        left: 5px;
+        } */
+        
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            gap: 0px;
+        }
+        
+        nav{
+            position: fixed;
+            top: 0;
+            display: flex;
+            background-color: var(--primaryColor);
+            height: 70px;
+            width: 100%;
+            justify-content: space-around;
+        }
+        h1{
+            align-self: center;
+            color: var(--lightColor);
+            font-size: 35px;
+        }
+        
+        nav >ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            gap: 8px;
+            align-items: center;
+        }
+nav >ul > li > a{
+text-decoration: none;
+color: var(--lightColor);
+padding: 8px;
+border-radius: 20px;
+}
+nav >ul > li > a:hover{
+    background-color: var(--secondaryColor);
+}
+.section1{
+    display: flex;
+    background-image: url(assets/imgs/Jeep-car.png);
+    height: 660px;
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+    justify-content: space-around;
+}
+
+
+.section1-title {
+    color: var(--lightColor);
+    font-size: 8vh;
+    width: 36vw;
+    padding-bottom: 50px;
+    text-transform: capitalize;
+}
+.section2-title{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.fa-arrow-left {
+    font-size: 30px;
+    color: var(--lightColor);
+    border: 2px solid var(--lightColor);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.fa-arrow-left:hover{
+    background-color: var(--hov);
+}
+.submit{
+    font-size: 30px;
+    color: var(--lightColor);
+    border: 2px solid var(--lightColor);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .6px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: var(--hov);
+}
+.arrow {
+    padding-bottom: 50px;
+}
+
+.section2{
+    text-align: center;
+    padding:60px 100px;    
+}
+.description {
+    font-family: cursive;
+}
+hr {
+    width: 165px;
+    height: 3px;
+    background-color: black;
+    margin: 10px 0 10px 446px;
+}
+.btn {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 24px;
+    border: 3px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    transition: 0.6s;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.btn:hover {
+    background-color: var(--secondaryColor2);
+    
+}
+
+.section3 {
+    width: 1070px;
+    display: grid;
+    padding: 60px 100px;
+    grid-template-areas: 
+    "Dabi Dabi1 Dabi2"
+    "Dabi3 Dabi3 Dabi3"
+    "Dabi4 Dabi5 Dabi6";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 85px;
+}
+.section3>.Dabi {
+    grid-area: Dabi;
+    background-image: url(assets/imgs/Jeep-car.png);
+}
+    .section3>.Dabi1 {
+        grid-area: Dabi1;
+        background-image: url(assets/imgs/Jeep-car.png);
+    }
+    .section3>.Dabi2 {
+        grid-area: Dabi2;
+        background-image: url(assets/imgs/Jeep-car.png);
+    }
+    .section3>.Dabi3 {
+        grid-area: Dabi3;
+        width: 1070px;
+        height: 500px;
+    }
+    .section3>.Dabi4 {
+        grid-area: Dabi4;
+        background-image: url(assets/imgs/Jeep-car.png);
+    }
+    .section3>.Dabi5 {
+        grid-area: Dabi5;
+        background-image: url(assets/imgs/Jeep-car.png);
+    }
+    .section3>.Dabi6 {
+        grid-area: Dabi6;
+        background-image: url(assets/imgs/Jeep-car.png);
+    }
+    .item {
+        display: flex;
+        width: 300px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size:300px 350px; 
+        align-items: end;
+        color: var(--lightColor);
+    }
+    .item > span {
+        margin: 10px;
+    }
+    table {
+        width: 600px;
+        height: 300px;
+        margin: 60px 227px;
+        border-spacing: 0;
+        font-family: cursive;
+        
+    }
+    td:first-child:nth-child(1) {
+        background-color: var(--bgColor-1);
+        color: var(--lightColor);
+    }
+
+    tr:nth-child(even) td:nth-child(2) {
+        background-color: var(--secondaryColor2);
+        color: var(--bgColor-2);
+    }
+
+    tr:nth-child(odd) td:nth-child(2) {
+        background-color: var(--lightColor);
+        color: var(--bgColor-1);
+    }
+    td{
+        padding: 10px;
+        text-align: left;
+    }
+    .section4 {
+        background-color: var(--primaryColor);
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        padding-top: 100px;
+    }
+    input{
+        width: 15vw;
+        height: 5vh;
+        margin-right: 1vw;
+        border: none;
+        padding-left: 10px;
+    }
+    textarea{
+        width: 64vw;
+        margin-left: -1vw;
+        height: 15vh;
+        margin-top: 1vh;
+        padding-left: 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 60px 100px;
+        color: var(--lightColor);
+        background-color: var(--bgColor-1);
+
+    }
+    footer>div>ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+    footer>div {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
