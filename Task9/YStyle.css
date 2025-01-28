@@ -7,6 +7,9 @@
     --IBgColor2: #94949480;
     --bgColor-2 : #22282a;
 }
+:root{
+    --videoContainer:30%
+}
 
 * {
     margin: 5px;
@@ -29,7 +32,7 @@ p{
     margin: 0px;
     padding: 0px;
     cursor: pointer;
-    transition: .6s;
+    transition: .6s ;
 
 }
 p:hover{
@@ -38,15 +41,15 @@ text-decoration: underline;
 
 }
 .videoSpan{
-    color: gray;
+    color: var(--IBgColor2);
     margin: 0px;
     padding: 0px;
     cursor: pointer;
-    transition: 9.6s;
+    transition: .6s, text-decoration .6s;
 
 }
 .videoSpan:hover{
-color: var(--IBgColor2);
+color: var(--IBgColor);
 text-decoration: underline;
 
 }
@@ -55,7 +58,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     
-
+ 
 }
 header{
     position: sticky;
@@ -107,7 +110,7 @@ color: var(--primaryColor);
     width: fit-content;
     cursor: pointer;
 }
-
+ 
 .searchBarInput{
     margin-right: 0px;
     width: 450px;
@@ -243,10 +246,13 @@ cursor: pointer;
 
 }
 
+
+
 .section > .videoContainer{
     display: grid;
     grid-template-columns: 1fr;
     height: 335px;
+    width: var(--videoContainer);
 
 }
 
@@ -272,3 +278,4 @@ cursor: pointer;
 .videoContainer > video:hover{
 border-radius: 20px;
 }
+

@@ -7,8 +7,8 @@
     --bgColor-1 : #171a1c;
     --bgColor-2 : #22282a;
 }
-
-
+:root{--padding-content: 60px 100px;
+}
 /* scroll-behavior: smooth; */
 
 
@@ -69,11 +69,11 @@ nav >ul > li > a:hover{
     background-image: url(assets/imgs/Jeep-car.png);
     height: 660px;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     align-items: end;
     justify-content: space-around;
 }
-
+ 
 
 .section1-title {
     color: var(--lightColor);
@@ -117,7 +117,7 @@ nav >ul > li > a:hover{
 
 .section2{
     text-align: center;
-    padding:60px 100px;    
+    padding:var(--padding-content);    
 }
 .description {
     font-family: cursive;
@@ -147,7 +147,7 @@ hr {
 .section3 {
     width: 1070px;
     display: grid;
-    padding: 60px 100px;
+    padding: var(--padding-content);
     grid-template-areas: 
     "Dabi Dabi1 Dabi2"
     "Dabi3 Dabi3 Dabi3"
@@ -247,7 +247,7 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        padding: 60px 100px;
+        padding: var(--padding-content);
         color: var(--lightColor);
         background-color: var(--bgColor-1);
 
